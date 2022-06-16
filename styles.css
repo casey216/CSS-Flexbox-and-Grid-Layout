@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	max-width: 1440px;
+	background: hsl(0, 0%, 95%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 900px;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container .box1 {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: hsl(31, 77%, 52%);
+	border-radius: 20px 0 0 20px;
+}
+
+.container .box2 {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: hsl(184, 100%, 22%);
+}
+
+.container .box3 {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: hsl(179, 100%, 13%);
+	border-radius: 0 20px 20px 0;
+}
+
+
+.container .content .btn {
+	background-color: color: hsl(0, 0%, 95%);
+	width: 100px;
+	height: 30px;
+	border: 2px solid;
+	border-radius: 15px;
+	border-color: hsl(0, 0%, 95%);
+	margin: 60px 40px;
+}
+
+.container .box1 .content .btn {
+	color: hsl(31, 77%, 52%);
+}
+
+.container .box1 .content .btn:hover {
+	color: hsl(0, 0%, 95%);
+	background: transparent;
+}
+
+.container .box2 .content .btn {
+	color: hsl(184, 100%, 22%);
+}
+
+.container .box2 .content .btn:hover {
+	color: hsl(0, 0%, 95%);
+	background: transparent;
+}
+
+.container .box3 .content .btn {
+	color: hsl(179, 100%, 13%);
+}
+
+.container .box3 .content .btn:hover {
+	color: hsl(0, 0%, 95%);
+	background: transparent;
+}
+
+.container .content h3 {
+	color: hsl(0, 0%, 95%);
+	padding: 0 40px;
+	font-family: 'Big Shoulders Display';
+}
+
+.container .content img {
+	padding: 30px 40px;
+}
+
+.container .content p {
+	color: hsla(0, 0%, 100%, 0.75);
+	padding: 0 40px;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+#myDIV {
+  height:400px;
+  width: 600px;
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-areas: 'one one one two' 'one one one two' 'three three four four' 'three three five five';
+}
+#myDIV div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: one;
+  background-color: red;
+}
+.item2 {
+  grid-area: two;
+  background-color: blue;
+}
+.item3 {
+  grid-area: three;
+  background-color: green;
+}
+.item4 {
+  grid-area: four;
+  background-color: black;
+}
+.item5 {
+  grid-area: five;
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+
+<div id="myDIV">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+  <div class="item5"></div>
+</div>
+
+</body>
+</html>
